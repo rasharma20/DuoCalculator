@@ -40,6 +40,8 @@ jobs:
         run: npm install --include=optional
       - name: Ensure rolldown Linux binding
         run: npm install --no-save @rolldown/binding-linux-x64-gnu
+      - name: Ensure lightningcss Linux binding
+        run: npm install --no-save lightningcss-linux-x64-gnu
       - name: Build
         run: npm run build
       - name: Setup Pages
